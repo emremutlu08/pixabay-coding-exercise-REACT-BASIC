@@ -3,6 +3,10 @@
 This configuration serves only the Create React App `build/` directory. It adds
 no Functions, bindings, secrets, custom domains, or paid services.
 
+The existing build copies `public/_headers` into the output. Its HSTS value
+matches the stable Vercel publication: `max-age=63072000; includeSubDomains;
+preload`.
+
 ## Build
 
 Use the existing Yarn v1 lockfile without updating dependencies. Run the build
